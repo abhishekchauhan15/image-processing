@@ -66,8 +66,7 @@ This is a Node.js application that processes images from a CSV file. The applica
 
 
 ## Architecture
-
-![diagram-export-2-24-2025-8_02_20-PM](https://github.com/user-attachments/assets/57e20cdd-f77e-41d9-8914-744b47250aa3)
+![image](https://github.com/user-attachments/assets/d469b99e-d532-4de0-9f88-f7cc704a9ceb)
 
 
 ## API Endpoints
