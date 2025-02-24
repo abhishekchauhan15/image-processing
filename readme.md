@@ -63,6 +63,13 @@ This is a Node.js application that processes images from a CSV file. The applica
 
 2. Use a tool like Postman or cURL to interact with the API.
 
+
+
+## Architecture
+
+![diagram-export-2-24-2025-8_02_20-PM](https://github.com/user-attachments/assets/57e20cdd-f77e-41d9-8914-744b47250aa3)
+
+
 ## API Endpoints
 
 Postman Collection : [<img src="https://run.pstmn.io/button.svg" alt="Run In Postman" style="width: 128px; height: 32px;">](https://app.getpostman.com/run-collection/24775685-881ed9fd-6488-434d-8219-59d4b8e2dc2b?action=collection%2Ffork&source=rip_markdown&collection-url=entityId%3D24775685-881ed9fd-6488-434d-8219-59d4b8e2dc2b%26entityType%3Dcollection%26workspaceId%3Db7cbef5e-a545-4d26-be99-f4460d5b45ea)
