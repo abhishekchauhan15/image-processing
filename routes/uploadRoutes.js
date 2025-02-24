@@ -5,6 +5,6 @@ const { uploadFile } = require('../controllers/uploadController');
 const router = express.Router();
 const upload = multer({ dest: 'uploads/' });
 
-router.post('/upload', upload.single('file'), uploadFile);
+router.post('/upload', upload.array('files'), uploadFile);
 
 module.exports = router;
