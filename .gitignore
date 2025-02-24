@@ -1,0 +1,26 @@
+node_modules/
+.env
+uploads/
+logs/
+dist/
+build/
+.DS_Store
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+coverage/
+*.log
+*.csv
+*.zip
+
+# Ignore AWS credentials
+.aws/
+
+# Ignore IDE/editor specific files
+.vscode/
+.idea/
+*.swp
+
+# Ignore processed images
+processed-images/
+op.js

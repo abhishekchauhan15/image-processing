@@ -1,23 +1,29 @@
 require('dotenv').config();
-const mongoose = require('mongoose');
-const axios = require('axios');
+const express = require('express');
+const connectDB = require('./config/db');
+const uploadRoutes = require('./routes/uploadRoutes');
+const logger = require('./utils/logger');
 
+// Connect to Database
+connectDB();
 
-// Initialize Express
 const app = express();
 app.use(express.json());
 
+// Use Routes
+app.use('/', uploadRoutes);
 
-app.get('/health', async (req, res) => {
+// Status API
+app.get('/status/:requestId', async (req, res) => {
     try {
-        res.json({ message:"Server is running!!" });
+        const request = await Request.findOne({ requestId: req.params.requestId });
+        if (!request) return res.status(404).send({ error: 'Request not found' });
+        res.json({ status: request.status, products: request.products });
     } catch (error) {
-        logger.error('Error in /health endpoint:', error);
+        logger.error('Error in /status endpoint:', error);
         res.status(500).send({ error: 'Internal server error' });
     }
 });
-
-
 
 // Start Server
 const PORT = process.env.PORT || 3000;
