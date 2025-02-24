@@ -65,6 +65,8 @@ This is a Node.js application that processes images from a CSV file. The applica
 
 ## API Endpoints
 
+Postman Collection : [<img src="https://run.pstmn.io/button.svg" alt="Run In Postman" style="width: 128px; height: 32px;">](https://app.getpostman.com/run-collection/24775685-881ed9fd-6488-434d-8219-59d4b8e2dc2b?action=collection%2Ffork&source=rip_markdown&collection-url=entityId%3D24775685-881ed9fd-6488-434d-8219-59d4b8e2dc2b%26entityType%3Dcollection%26workspaceId%3Db7cbef5e-a545-4d26-be99-f4460d5b45ea)
+
 ### 1. Upload API
 
 - **Endpoint**: `POST /upload`
