@@ -26,6 +26,14 @@ app.get('/status/:requestId', async (req, res) => {
     }
 });
 
+app.get('/health', async (req, res) => {
+    try {
+        res.json({ message:"server working!!" });
+    } catch (error) {
+        res.status(500).send({ error: 'Internal server error' });
+    }
+});
+
 // Start Server
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => logger.info(`Server running on port ${PORT}`));
